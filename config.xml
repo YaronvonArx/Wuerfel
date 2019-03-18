@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <widget version="1.0.0">
-    <name>App-Name</name>
+    <name>Würfel</name>
     <description>
-        App-Beschreibung
+        Das ist eine Würfel-App
     </description>
     <author>
-        Dein Name
+        Yaron
     </author>
 
     <!-- General settings -->
