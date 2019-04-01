@@ -1,3 +1,13 @@
+//(optional) Würfel SVG-Grafiken
+var num1 = '<circle cx="200" cy="200" r="40" fill="white"/>';
+var num2 = '<circle cx="100" cy="100" r="40" fill="white"/><circle cx="300" cy="300" r="40" fill="white"/>';
+var num3 = num1 + num2;
+var num4 = num2 + '<circle cx="100" cy="300" r="40" fill="white"/><circle cx="300" cy="100" r="40" fill="white"/>';
+var num5 = num4 + num1;
+var num6 = num4 + '<circle cx="100" cy="200" r="40" fill="white"/><circle cx="300" cy="200" r="40" fill="white"/>';
+var diceSVG = [num1, num2, num3, num4, num5, num6];
+
+
 //Hinzufügen von 'Eventlisteners' beim Seitenstart
 function init() {
 	//wenn auf das DIV mit der ID 'rollButton' geklickt wird, soll die Funktion 'rollDice1' ausgeführt werden
@@ -11,6 +21,10 @@ function rollDice1() {
 	document.getElementById('dice').innerHTML = Math.ceil(Math.random()+Math.random()+Math.random()+Math.random()+Math.random()+Math.random());
 }
 
+
+//output = diceSVG[Math.ceil(Math.random()+Math.random()+Math.random()+Math.random()+Math.random()+Math.random())]
+
+
 //Mit Hilfe von 'setInterval' soll die Funktion 'animDice' mehrmals hintereinander (mit einer kurzen Pause) ausgeführt werden.
 function rollDice2() {
 	//damit während der "Animation" keine klicks die Funktion stören, wird der Eventlistener anfangs entfernt und zum Schluss wieder hinzugefügt.
@@ -18,43 +32,18 @@ function rollDice2() {
 	
 	var x=0;
 
-	var animDice = function(){
-		
+	var animDice = function(){	
 		x++;
 		// bei jedem Ausführen soll die Variable x um 1 erhöht werden.
 		/* ... hier kommt dein Code */
-
 		// bei jedem Ausführen soll eine Zufallszahl in das DIV mit der ID 'dice' geschrieben werden.
-		document.getElementById('dice').innerHTML = Math.ceil(Math.random()+Math.random()+Math.random()+Math.random()+Math.random()+Math.random());
-
-		if(x==10){
+		//document.getElementById('dice').innerHTML = Math.ceil(Math.random()+Math.random()+Math.random()+Math.random()+Math.random()+Math.random());
+	document.getElementById('dice').innerHTML = '<svg viewBox="0 0 400 400">'+diceSVG[Math.ceil(Math.random()+Math.random()+Math.random()+Math.random()+Math.random()+Math.random())]+'</svg>'	
+		if(x==30){
 			clearInterval(timer);
 			document.getElementById('rollButton').addEventListener('click', rollDice2);
 		}
 	}
-	timer = setInterval(animDice, 1000)
+	timer = setInterval(animDice, 50)
 }
 
-function myFunction() {
-	var x = 0;
-	var repeatedFunction = function () {
-	  x++;
-	  alert(x);
-	  if (x == 10) {
-		clearInterval(timer);
-		alert('1000ms=1s');
-	  }
-	}
-	timer = setInterval(repeatedFunction, 1000);
-  }
-
-//(optional) Würfel SVG-Grafiken
-/*
-var num1 = '<circle cx="200" cy="200" r="40" fill="black"/>';
-var num2 = '<circle cx="100" cy="100" r="40" fill="black"/><circle cx="300" cy="300" r="40" fill="black"/>';
-var num3 = num1 + num2;
-var num4 = num2 + '<circle cx="100" cy="300" r="40" fill="black"/><circle cx="300" cy="100" r="40" fill="black"/>';
-var num5 = num4 + num1;
-var num6 = num4 + '<circle cx="100" cy="200" r="40" fill="black"/><circle cx="300" cy="200" r="40" fill="black"/>';
-var diceSVG = [num1, num2, num3, num4, num5, num6];
-*/
