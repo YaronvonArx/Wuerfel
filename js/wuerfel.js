@@ -39,11 +39,11 @@ function rollDice2() {
 		// bei jedem Ausführen soll eine Zufallszahl in das DIV mit der ID 'dice' geschrieben werden.
 		//document.getElementById('dice').innerHTML = Math.ceil(Math.random()+Math.random()+Math.random()+Math.random()+Math.random()+Math.random());
 	document.getElementById('dice').innerHTML = '<svg viewBox="0 0 400 400">'+diceSVG[Math.ceil(Math.random()+Math.random()+Math.random()+Math.random()+Math.random()+Math.random())]+'</svg>'	
-		if(x==30){
+		if(x==20){
 			clearInterval(timer);
 			document.getElementById('rollButton').addEventListener('click', rollDice2);
 		}
 	}
-	timer = setInterval(animDice, 50)
+	timer = setInterval(animDice, 100)
 }
 

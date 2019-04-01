@@ -90,3 +90,25 @@ a {
   background: #4400ff;
 
 }
+
+@media screen and (min-width: 480px) {
+  .dice{
+    width: 60vw;
+    height: 60vw;
+    font-size: 50vw;
+  }
+}
+@media screen and (min-width: 520px) {
+  .dice{
+    width: 50vw;
+    height: 50vw;
+    font-size: 40vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  .dice{
+    width: 40vw;
+    height: 40vw;
+    font-size: 30vw;
+  }
+}
