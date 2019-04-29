@@ -67,7 +67,7 @@ a {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height:auto;
+  height:50px;
   margin: 0;
   padding: 4vw 0;
   background: #4400ff;
@@ -98,17 +98,23 @@ a {
     font-size: 50vw;
   }
 }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 500px) {
   .dice{
-    width: 50vw;
-    height: 50vw;
-    font-size: 40vw;
+    width: 30vw;
+    height: 30vw;
+    font-size: 25vw;
+    margin: 0
   }
+  .controls{
+    height: 20vw;
+    font-size: 20vw;
+
+
 }
 @media screen and (min-width: 600px) {
   .dice{
-    width: 40vw;
-    height: 40vw;
-    font-size: 30vw;
+    width: 20vw;
+    height: 20vw;
+    font-size: 17vw;
   }
 }
