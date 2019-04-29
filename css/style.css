@@ -93,9 +93,9 @@ a {
 
 @media screen and (min-width: 480px) {
   .dice{
-    width: 30vw;
-    height: 30vw;
-    font-size: 23vw;
+    width: 40vw;
+    height: 40vw;
+    font-size: 35vw;
     margin: 1vw;
   }
 }
