@@ -29,6 +29,7 @@ function rollDice1() {
 function rollDice2() {
 	//damit während der "Animation" keine klicks die Funktion stören, wird der Eventlistener anfangs entfernt und zum Schluss wieder hinzugefügt.
 	document.getElementById('rollButton').removeEventListener('click', rollDice2);
+	document.getElementById('rollButton').removeEventListener("touchstart", rollDice2);
 	
 	var x=0;
 
@@ -42,6 +43,7 @@ function rollDice2() {
 		if(x==20){
 			clearInterval(timer);
 			document.getElementById('rollButton').addEventListener('click', rollDice2);
+			document.getElementById('rollButton').addEventListener("touchstart", rollDice2);
 		}
 	}
 	timer = setInterval(animDice, 100)
