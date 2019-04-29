@@ -67,7 +67,7 @@ a {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height:50px;
+  height:70px;
   margin: 0;
   padding: 4vw 0;
   background: #4400ff;
@@ -76,13 +76,13 @@ a {
 .rollButton{
   float: left;
   width:45vw;
-  height:15vw;
+  height:20vw;
   margin: 0 27.5vw;
-  padding-top: 3vw;
+  padding-top: 6vw;
   background: #00b7ff;
   border: 0.75vw solid #1900ff;
   box-sizing: border-box;
-  border-radius: 1.5vw;
+  border-radius: 2vw;
   font-size:9vw;
   line-height: 9vw;
 }
@@ -93,9 +93,9 @@ a {
 
 @media screen and (min-width: 480px) {
   .dice{
-    width: 40vw;
-    height: 40vw;
-    font-size: 35vw;
+    width: 39vw;
+    height: 39vw;
+    font-size: 34vw;
     margin: 1vw;
   }
 }
