@@ -93,27 +93,9 @@ a {
 
 @media screen and (min-width: 480px) {
   .dice{
-    width: 60vw;
-    height: 60vw;
-    font-size: 50vw;
-  }
-}
-@media screen and (min-width: 500px) {
-  .dice{
-    width: 50vw;
-    height: 50vw;
-    font-size: 40vw;
-    margin: 0
-  }
-  .controls{
-    height: 20vw;
-    font-size: 20vw;
-
-}
-@media screen and (min-width: 600px) {
-  .dice{
-    width: 20vw;
-    height: 20vw;
-    font-size: 17vw;
+    width: 30vw;
+    height: 30vw;
+    font-size: 23vw;
+    margin: 1vw;
   }
 }
