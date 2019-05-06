@@ -67,9 +67,9 @@ a {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height:70px;
+  height:80px;
   margin: 0;
-  padding: 4vw 0;
+  padding: 2vw 0vw 2vw;
   background: #4400ff;
 }
 
@@ -93,9 +93,12 @@ a {
 
 @media screen and (min-width: 480px) {
   .dice{
-    width: 39vw;
-    height: 39vw;
-    font-size: 34vw;
-    margin: 1vw;
+    width: 38vw;
+    height: 38vw;
+    font-size: 35vw;
+    margin: 0.5vw;
+  }
+  .controls{
+    height: 70px
   }
 }
