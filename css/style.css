@@ -65,7 +65,7 @@ a {
 /* Würfelbutton (unten) */
 #controls{
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100vw;
   height:80px;
   margin: 0;
@@ -78,11 +78,13 @@ a {
   width:45vw;
   height:20vw;
   margin: 0 27.5vw;
+  margin-top:-8px;
   padding-top: 6vw;
+  padding-bottom: 6vw;
   background: #00b7ff;
   border: 0.75vw solid #1900ff;
   box-sizing: border-box;
-  border-radius: 2vw;
+  border-radius: 5vw;
   font-size:9vw;
   line-height: 9vw;
 }
