@@ -65,28 +65,28 @@ a {
 /* Würfelbutton (unten) */
 #controls{
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 100vw;
-  height:80px;
+  height:auto;
   margin: 0;
-  padding: 2vw 0vw 2vw;
+  padding: 4vw 0;
   background: #4400ff;
 }
 
 .rollButton{
   float: left;
-  width:45vw;
-  height:20vw;
+  width:40vw;
+  height:15vw;
   margin: 0 27.5vw;
-  margin-top:-8px;
-  padding-top: 6vw;
+  margin-top:0vw;
+  padding-top: 0vw;
   padding-bottom: 6vw;
   background: #00b7ff;
   border: 0.75vw solid #1900ff;
   box-sizing: border-box;
   border-radius: 5vw;
   font-size:9vw;
-  line-height: 9vw;
+  line-height: 14vw;
 }
 #startseite{
   background: #4400ff;
