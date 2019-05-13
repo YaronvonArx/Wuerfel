@@ -67,9 +67,12 @@ a {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height:auto;
+  height:5%;
   margin: 0;
-  padding: 4vw 0;
+  padding-bottom: 90px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 1px;;
   background: #4400ff;
 }
 
